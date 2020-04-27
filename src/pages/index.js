@@ -39,6 +39,11 @@ const BlogIndex = ({ data, location }) => {
                 }}
               />
             </section>
+            <section>
+              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                read more ⟶
+              </Link>
+            </section>
           </article>
         )
       })}
