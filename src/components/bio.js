@@ -56,7 +56,7 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p style={{ maxWidth: 270 }}>
+      <p style={{ maxWidth: 310 }}>
         Written by <strong>{author.name}</strong> {author.summary}
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>

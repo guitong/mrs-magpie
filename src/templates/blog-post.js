@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import readingTime from "reading-time"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -7,9 +8,11 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
+  console.log("data: ", data)
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const timeToRead = readingTime(post.html)
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -35,6 +38,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             {post.frontmatter.date}
+            {` - ${timeToRead.text}`}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
