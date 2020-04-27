@@ -1,4 +1,5 @@
 import React from "react"
+import "./layout.css"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
@@ -6,63 +7,50 @@ import { rhythm, scale } from "../utils/typography"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
+  header = (
+    <header
+      style={{
+        display: `flex`,
+        flexWrap: `wrap`,
+        justifyContent: `space-between`,
+        marginBottom: rhythm(1.6),
+        alignItems: `center`,
+      }}
+    >
+      <div
+        style={{
+          ...scale(0.8),
+          marginTop: 0,
+          fontFamily: `monospace, Helvetica, sans-serif`,
+        }}
+      >
+        <Link to={`/`}>{title}</Link>
+      </div>
+      <nav>
+        <a href="/">rss</a>
+      </nav>
+    </header>
+  )
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
   return (
     <div
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(28),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}</header>
+      {header}
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      {location.pathname === rootPath && (
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Link to={`/about`}>About Me</Link>
+        </footer>
+      )}
     </div>
   )
 }

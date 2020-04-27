@@ -1,9 +1,9 @@
 ---
-title: 杂记 ❥ 一
-date: '2019-02-27'
+title: "杂记 （一）"
+date: "2019-02-27"
 ---
 
-## 1. 如何写出更好的JS条件语句 ?
+## 如何写出更好的JS条件语句 ?
 
 >  https://mp.weixin.qq.com/s/JMwPdQSSTLWPSrLda5Yo5g
 
@@ -64,7 +64,7 @@ function test(color) {
 }
 ```
 
-## 2. 如何用gatsby搭建博客并部署到Github?
+## 如何用gatsby搭建博客并部署到Github?
 
 1. 直接使用模版  [https://github.com/gatsbyjs/gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) 
 

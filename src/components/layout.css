@@ -1,0 +1,31 @@
+/* global styles */
+a {
+  border-bottom: 3px solid blue;
+  color: #232333;
+}
+
+a:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+article a {
+  border: none;
+}
+
+::selection {
+  background: blue;
+  color: #fff;
+}
+
+h1::before { color: blue; content: '# ';}
+h2::before { color: blue; content: '## '; }
+h3::before { color: blue; content: '### '; }
+h4::before { color: blue; content: '#### '; }
+h5::before { color: blue; content: '##### '; }
+h6::before { color: blue; content: '###### '; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.2rem;
+  margin-top: 2em;
+}

@@ -38,7 +38,7 @@
   "devDependencies": {
     "prettier": "2.0.4"
   },
-  "homepage": "https://github.com/guitong/mrs-magpie",
+  "homepage": "picapica.space",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
