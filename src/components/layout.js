@@ -3,6 +3,7 @@ import "./layout.css"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Footer from "./footer"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -43,14 +44,7 @@ const Layout = ({ location, title, children }) => {
     >
       {header}
       <main>{children}</main>
-      {location.pathname === rootPath && (
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-          <Link to={`/about`}>About Me</Link>
-        </footer>
-      )}
+      {location.pathname === rootPath && <Footer />}
     </div>
   )
 }

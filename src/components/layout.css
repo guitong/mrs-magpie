@@ -69,3 +69,11 @@ pre[class*="language-"] {
   /* overflow: auto; */
   /* padding: 1em; */
 }
+
+/* footer */
+footer a {
+  margin: 0 6px;
+}
+footer a:first-child {
+  margin-left: 0;
+}
