@@ -62,3 +62,22 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+/**
+ * Custom GraphQL Schema
+ * @translation
+ * @category
+ */
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      translation: Boolean
+      category: String
+    }
+  `
+  createTypes(typeDefs)
+}

@@ -29,3 +29,43 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   margin-top: 2em;
 }
+
+/* callout block styles */
+.callout {
+  background: blue;
+  color: #fff;
+  padding: 1rem;
+  margin: 1.5em 0;
+}
+
+.callout p {
+  font-family: monospace, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.callout a {
+  color: #fff;
+}
+
+.callout a:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+ /* Inline code */
+ :not(pre) > code[class*="language-"] {
+  /* background: rgba(255,229,100,0.2); */
+  /* color: #1a1a1a; */
+  text-shadow: none;
+  padding: .15em .3em .05em;
+  background: none;
+  color: #932191;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  margin: 1.75rem 0;
+  /* border-radius: 8px; */
+  /* overflow: auto; */
+  /* padding: 1em; */
+}

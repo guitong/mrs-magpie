@@ -1,10 +1,12 @@
 ---
 title: "Angualr 组件之间如何通讯？"
 date: "2018-04-30"
-description: "@TODO: description"
+description: 多场景实例分析 ng 中组件的通讯方式。
+category: JavaScript
+translation: true
 ---
 
-场景一：通过输入型绑定把数据从父组件传到子组件
+## 场景一：通过输入型绑定把数据从父组件传到子组件
 
 使用`@Input`装饰器。
 
@@ -50,7 +52,7 @@ import ...
 
 ---
 
-场景二：通过setter截听输入属性值的变化
+## 场景二：通过setter截听输入属性值的变化
 
 使用输入属性的setter，以拦截父组件中值的变化，并作出响应。
 
@@ -75,9 +77,7 @@ export class NameChildComponent {
 }
 ```
 
----
-
-场景三：通过`ngOnChanges()`来截听输入属性值的变化
+## 场景三：通过`ngOnChanges()`来截听输入属性值的变化
 
 当需要监听多个、交互式输入属性的时候，此方法比setter更合适。
 
@@ -115,9 +115,7 @@ export class VersionChildComponent implements OnChanges {
 }
 ```
 
----
-
-场景四：父组件监听子组件的事件
+## 场景四：父组件监听子组件的事件
 
 也就是子 -> 父传递数据。
 
@@ -167,9 +165,7 @@ export class VotedTakerComponent {
 }
 ```
 
----
-
-场景五： 父子组件通过本地变量互动
+## 场景五： 父子组件通过本地变量互动
 
 父组件可以在模版里新建一个本地变量代表子组件，然后利用这个变量来读取子组件的属性和调用子组件的方法。
 
@@ -190,9 +186,7 @@ export class CountdownLocalVarParentComponent { }
 
 本地变量 —> `#timer`
 
----
-
-场景六： 父组件调用`@ViewChild()`
+## 场景六： 父组件调用`@ViewChild()`
 
 本地变量的方法有个局限性：父组件本身的代码对子组件没有访问权。
 
@@ -224,8 +218,6 @@ export class CountdownViewChildParentComponent implements AfterViewInit {
 
 _注意：Angular的单向数据流规则会阻止在同一个周期内更新父组件视图。_
 
----
-
-场景七： 父子组件通过服务来通讯
+## 场景七： 父子组件通过服务来通讯
 
 ...

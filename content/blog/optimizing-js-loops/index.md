@@ -1,9 +1,10 @@
 ---
 title: 'JavaScript: 优化循环'
 date: '2018-03-31'
+translation: true
+category: JavaScript
+description: 当你需要遍历一个非常庞大的数组时，你会发现这很有用：使用 while 而不是 for 循环。
 ---
-
->   原文见： [JavaScript: Optimizing loops](https://jaysoo.ca/2009/12/23/javascript-optimizing-loops/)
 
 当你需要遍历一个非常庞大的数组时，你会发现这很有用：使用 `while` 循环而不是 `for` 循环。
 
@@ -17,7 +18,7 @@ for (var i=0; i<myArray.length; i++) {
 ```
 
 你可以使用`while`循环让它运行的更快：
-<!-- more -->
+
 ```javascript
 var myArray = new Array(10000);
 var n = myArray.length;
@@ -37,3 +38,9 @@ for (var i=0; i<n; i++) {
   myArray[i] = i;
 }
 ```
+
+<div class="callout">
+
+原文：[JavaScript: Optimizing loops](https://jaysoo.ca/2009/12/23/javascript-optimizing-loops/)
+
+</div>

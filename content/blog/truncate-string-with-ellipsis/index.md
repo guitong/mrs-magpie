@@ -1,6 +1,8 @@
 ---
 title: CSS 实现文字过长显示省略号
 date: '2018-03-05'
+category: CSS
+description: 有时我们希望文本的内容不要太长，如果超出预期长度的话，则显示省略号标记。这种实现也比较常见。
 ---
 
 有时我们希望文本的内容不要太长，如果超出预期长度的话，则显示省略号标记。这种实现也比较常见。
@@ -26,11 +28,8 @@ overflow: hidden;
 text-overflow: ellipsis;
 ```
 
-
 下面是一个示例:
 
 <iframe width="100%" height="300" src="//jsfiddle.net/redtree/zq97zatd/2/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 https://jsfiddle.net/redtree/zq97zatd/2/
-
-（完）

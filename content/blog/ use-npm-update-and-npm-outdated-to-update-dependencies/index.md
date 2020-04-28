@@ -1,15 +1,12 @@
 ---
-title: "使用npm update 和 npm outdated 更新依赖"
+title: (待修改)使用 npm update 和 npm outdated 更新项目依赖包
 date: "2018-06-26"
-description: "@TODO: description"
+description: 本文介绍了使用 npm 从命令行更新项目依赖的几种方法。
+translation: true
+category: Tools
 ---
 
-
-> [Using npm update and npm outdated to update dependencies](https://bytearcher.com/articles/using-npm-update-and-npm-outdated-to-update-dependencies/)
->
->  By [PANU PITKÄMÄKI](https://bytearcher.com/contact/)
-
-更新一个库的新版本并不容易。Semantic versioning screws things just enough, 所以手动修改`package.json`文件的方式要比尝试npm杂技更安全一些。这篇文章将介绍如何只使用npm从命令行更新依赖。
+更新一个库的新版本并不容易。语义版本控制足以解决问题，所以手动修改`package.json`文件的方式要比尝试npm杂技更安全一些。这篇文章将介绍如何只使用`npm`从命令行更新依赖。
 
 ## 使用 npm update 更新至最接近版本
 
@@ -27,7 +24,7 @@ description: "@TODO: description"
 
 然后运行`npm update`将会安装版本`3.10.1`至相同目录下，但是`package.json`并未修改（你可以通过传入 --save 选项来改变）。
 
-```
+```shell
 $ npm update
 └── lodash@3.10.1
 ```
@@ -38,7 +35,7 @@ $ npm update
 
 第一，使用`npm outdated`要求npm列出有更新版本的包。
 
-```
+```shell
 $ npm outdated
 Package  Current  Wanted  Latest  Location
 lodash    3.10.1  3.10.1  4.16.4  backend
@@ -46,7 +43,7 @@ lodash    3.10.1  3.10.1  4.16.4  backend
 
 第二，让npm安装最新版本的包。你可以使用`@latest`标记索取最新版本。你也应该使用`--save`标记更新`package.json`文件。
 
-```
+```shell
 $ npm install lodash@latest --save
 ```
 
@@ -57,4 +54,10 @@ $ npm install lodash@latest --save
 	"lodash": "^4.16.4"
 }
 ```
-（完）
+
+<div class="callout">
+
+原文：[Using npm update and npm outdated to update dependencies](https://bytearcher.com/articles/using-npm-update-and-npm-outdated-to-update-dependencies/) By [PANU PITKÄMÄKI](https://bytearcher.com/contact/)
+
+</div>
+

@@ -27,7 +27,7 @@ const Layout = ({ location, title, children }) => {
         <Link to={`/`}>{title}</Link>
       </div>
       <nav>
-        <a href="/">rss</a>
+        <a href="http://picapica.space/rss.xml">rss</a>
       </nav>
     </header>
   )
@@ -37,7 +37,7 @@ const Layout = ({ location, title, children }) => {
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(28),
+        maxWidth: rhythm(26),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >

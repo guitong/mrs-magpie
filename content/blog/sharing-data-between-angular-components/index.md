@@ -1,11 +1,10 @@
 ---
 title: Angular组件共享数据的四种方法
 date: '2018-05-25'
+translation: true
+category: JavaScript
+description: 在深入您的第一个 ng 项目前，需要理解一个重要的概念 — 数据共享。在这节课程里将提供四种用于 ng 组件之间共享数据的方法。
 ---
-
-> [Sharing Data Between Angular Components - Four Methods](https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/)
->
-> Arp 30, 2017 by Jeff Delaney
 
 在深入您的第一个Anguar项目前，需要理解一个重要的概念 — 数据共享。在这节课程里，我将提供四种用于Angular组件之间共享数据的方法。
 
@@ -249,4 +248,8 @@ export class SiblingComponent implements OnInit {
 }
 ```
 
-（完）
+<div class="callout">
+
+原文： [Sharing Data Between Angular Components - Four Methods](https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/) by Jeff Delaney
+
+</div>

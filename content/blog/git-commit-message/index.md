@@ -1,6 +1,8 @@
 ---
 title: Git Commit Message 编写约定
 date: '2018-04-12'
+category: Tools
+description: 如果想要参与开源项目，最好还是规范下提交 commit message 的格式。
 ---
 
 目前普遍使用的是[Angular规范](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit?usp=sharing)。如下图：

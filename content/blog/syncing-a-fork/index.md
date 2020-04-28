@@ -1,13 +1,10 @@
 ---
 title: 如何同步一个fork仓库
 date: '2018-02-20'
+category: Tools
+translation: true
+description: 一般情况下，当我们想在Github上为开源项目做贡献时，会首先将项目fork到自己的库中。那么应该如何同步这个库，使其与上游库保持最新呢？
 ---
-
->   参考Github官方帮助文档：
->
->   [syncing-a-fork](https://help.github.com/articles/syncing-a-fork/)
->
->   [configuring-a-remote-for-a-fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
 一般情况下，当我们想在Github上为开源项目做贡献时，会首先将项目fork到自己的库中。那么应该如何同步这个库，使其与上游库保持最新呢？
 
@@ -15,17 +12,13 @@ date: '2018-02-20'
 
 （这里我们以 [webpack](https://github.com/webpack/webpack) 的开源项目为例）
 
----
-
-## \# 1 首先fork一个库
+## 首先fork一个库
 
 ![click the fork button](./click_fork_button.png)
 
 然后用你喜欢的方式将它克隆到本地。
 
----
-
-## \# 2 配置fork仓库的远端仓库
+## 配置fork仓库的远端仓库
 
 当我们已经对自己fork的仓库做了一些修改，然而可能源仓库已经又有了其他的更新，我们想把这些更新同步到自己的fork仓库。这时，我们应该先配置自己fork仓库的远端仓库地址。
 
@@ -55,11 +48,7 @@ upstream        https://github.com/webpack/webpack.git (fetch)
 upstream        https://github.com/webpack/webpack.git (push)
 ```
 
----
-
-
-
-## \# 3 可以进行同步了!
+## 可以进行同步了!
 
 现在让我们开始同步fork仓库。
 
@@ -109,4 +98,9 @@ $ git merge upstream/master
 
 **Tip**: Syncing your fork only updates your local copy of the repository. To update your fork on GitHub, you must [push your changes](https://help.github.com/articles/pushing-to-a-remote).
 
-(完)
+<div class="callout">
+
+Github官方帮助文档：[syncing-a-fork](https://help.github.com/articles/syncing-a-fork/)
+[configuring-a-remote-for-a-fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+
+</div>

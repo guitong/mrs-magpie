@@ -1,6 +1,8 @@
 ---
-title: "杂记 （一）"
+title: "杂集"
 date: "2019-02-27"
+description: 如何写JS条件语句？ES6 Symbol?
+category: jotting
 ---
 
 ## 如何写出更好的JS条件语句 ?
@@ -100,7 +102,7 @@ git remote add origin git@github.com:username/project-name.git
 
 ## ES6 Symbol
 
-> [ECMAScript 6 入门 #Symbol By 阮一峰](http://es6.ruanyifeng.com/#docs/symbol)
+参考 [ECMAScript 6 入门 #Symbol By 阮一峰](http://es6.ruanyifeng.com/#docs/symbol)
 
 引入原因：保证对象的每个属性是惟一的，防止属性名冲突。
 

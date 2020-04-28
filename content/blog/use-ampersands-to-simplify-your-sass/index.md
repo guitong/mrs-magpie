@@ -1,10 +1,9 @@
 ---
-title: 如何利用`&`来简化你的Sass
+title: 如何利用 & 来简化你的Sass
 date: '2018-05-19'
+translation: true
+category: CSS
 ---
-
->  [_How To Use Ampersands To Simplify Your Sass_](https://seesparkbox.com/foundry/how_to_use_ampersands_to_simplifiy_your_sass)
->  Author: [PHILIP ZASTROW](https://seesparkbox.com/foundry/author/philip_zastrow)
 
 `&`（ampersand）是一个神奇的字符。它是一个古老的符号，是来源于拉丁语“Et”的一个连字符，可用于连接单词、短语和`thoughts？`。如今，`&`的使用变得更多样化，但是`&`仍然保持了它原始的含义 — `and`, `as well as` 或 `this too`。在Sass中，`&`引用声明块的父选择器，允许其在自己的内部被引用。这意味着，诸如伪类选择器（pseudo selectors）、同胞选择器（sibling selectors）等可以使用该选择器的其他声明来引用和分组。`&`是组织和扩展Sass的强大工具。
 
@@ -194,4 +193,8 @@ h1 + h2 {
 
 明确地，我们仅仅讨论了Sass中`&`的力量。混合使用上面讨论过的不同形式的组合，可以实现更多的效果。你可能会遇到这样的情况：你需要定位选择器的同胞，但仅当它有特定父元素时（e.g. `.parent-class & + .sibling-class`)。At that point, you can take `&` to the next level by using it with mixins and extend to make wonderfully usable code — sky's the limit.So dream big, but not too big.
 
-（完）
+<div class="callout">
+
+原文： [_How To Use Ampersands To Simplify Your Sass_](https://seesparkbox.com/foundry/how_to_use_ampersands_to_simplifiy_your_sass) By [PHILIP ZASTROW](https://seesparkbox.com/foundry/author/philip_zastrow)
+
+</div>

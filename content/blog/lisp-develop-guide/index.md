@@ -1,6 +1,8 @@
 ---
-title: 'Lisp环境配置指南'
+title: Lisp 环境配置指南
 date: '2018-09-22'
+category: programming
+description: 你也想学学函数式编程？
 ---
 
 ## 安装 SBCL
@@ -93,16 +95,12 @@ M-x package-install RET slime RET
 
 开始你的Lisp之路吧！
 
-## Reference
+# Reference
 
-> http://lisp-lang.org/learn/getting-started/
->
-> https://github.com/slime/slime
->
-> https://github.com/melpa/melpa
->
-> https://common-lisp.net/project/slime/doc/html/Installation.html
+- http://lisp-lang.org/learn/getting-started/
 
+- https://github.com/slime/slime
 
-（完）
+- https://github.com/melpa/melpa
 
+- https://common-lisp.net/project/slime/doc/html/Installation.html

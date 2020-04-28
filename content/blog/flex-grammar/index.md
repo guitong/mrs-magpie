@@ -1,9 +1,11 @@
 ---
 title: Flex 语法总结
 date: '2018-04-22'
+category: CSS
+description: 哪个属性又搞不清了？
 ---
 
-## 一、声明为Flex布局
+## 声明为Flex布局
 
 ```css
 .box { display: flex; } /* container */
@@ -15,7 +17,7 @@ _注意_：
 * _webkit内核浏览器，必须加`-webkit`前缀。_
 * _子元素的`float`、`clear`、`vertical-align`属性将失效_
 
-## 二、基本概念
+## 基本概念
 
 ![flex](https://user-images.githubusercontent.com/30484000/37039826-593142e4-2193-11e8-94a9-db666511e31e.png)
 
@@ -26,7 +28,7 @@ _注意_：
 3. cross axis（cross start | cross end）
 4. item沿主轴排列 - 占据空间 main size | cross size
 
-## 三、容器属性
+## 容器属性
 
 overview：
 
@@ -99,7 +101,7 @@ default: `row nowrap`
 * space-around: 每根轴线两侧间隔相等
 * stretch(default): 轴线占满整个交叉轴
 
-## 四、项目属性
+## 项目属性
 
 overview:
 
@@ -149,6 +151,5 @@ align-self
 ```
 
 # Reference
-http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
-（完）
+* http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html

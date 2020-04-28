@@ -1,11 +1,9 @@
 ---
-title: '小记: 关于CSS display 属性对表格语义的影响'
+title: '小记: 关于 CSS display 属性对表格语义的影响'
 date: '2018-05-09'
+translation: true
+category: CSS
 ---
-
-> [_Short note on what CSS display properties do to table semantics_](https://developer.paciellogroup.com/blog/2018/03/short-note-on-what-css-display-properties-do-to-table-semantics/)
->
-> Posted on Sunday, 4 March 2018 by Steve Faulkner
 
 CSS的`display`属性非常强大。你可以用它来改变元素的视觉展示以匹配期望的样式，但有时候这样做可能会在浏览器可访问性树（[browser accessibility tree](https://developer.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/)）中产生意想不到的影响，如传达给屏幕阅读软件的元素的语义。通常情况下，屏幕阅读器和其他辅助技术并不能直接访问HTML DOM，他们通过可访问性API（[Accessibility APIs](https://www.w3.org/TR/wai-aria-1.1/#dfn-accessibility-api)）获取HTML DOM的部分信息。有时候，一个元素在HTML DOM中和可访问性树中会有不同的表示（represents）。
 
@@ -41,4 +39,8 @@ If nothing else, a developer should be aware that it is not always the fault of 
 
 [Tables, CSS Display Properties, and ARIA](http://adrianroselli.com/2018/02/tables-css-display-properties-and-aria.html)
 
-（完）
+<div class="callout">
+
+原文： [_Short note on what CSS display properties do to table semantics_](https://developer.paciellogroup.com/blog/2018/03/short-note-on-what-css-display-properties-do-to-table-semantics/) by Steve Faulkner
+
+</div>
