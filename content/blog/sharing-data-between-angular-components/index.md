@@ -1,5 +1,5 @@
 ---
-title: Angular组件共享数据的四种方法
+title: Angular 组件共享数据的四种方法
 date: '2018-05-25'
 translation: true
 category: JavaScript

@@ -1,7 +1,7 @@
 ---
 title: 'Better Blogs: 一个简单的开始'
 date: '2020-05-18'
-description: TODO
+description: 使用 Gatsby 快速搭建一个博客。
 category: Tools
 ---
 
@@ -19,13 +19,13 @@ category: Tools
 
 OK，回到我们的题目 -- 一个简单的开始。`Gatsby`为我们提供了一个非常不错的博客启动器，你可以在[这里](https://github.com/gatsbyjs/gatsby-starter-blog)找到它。只要在命令行工具中执行下面这一行简单的代码，即可自动生成一个博客站点：
 
-```sh
+```shell
 gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
 ```
 
 然后切换到该项目目录下即可进行博客的开发工作了。
 
-```sh
+```shell
 cd my-blog-starter
 gatsby develop
 ```

@@ -2,7 +2,7 @@
 title: Lisp 环境配置指南
 date: '2018-09-22'
 category: programming
-description: 你也想学学函数式编程？
+description: 一起学函数式编程。
 ---
 
 ## 安装 SBCL
