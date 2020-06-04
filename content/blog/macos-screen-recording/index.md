@@ -1,7 +1,6 @@
 ---
 title: Mac 系统下的录屏问题
 date: '2020-05-29'
-description: TODO
 category: Tools
 ---
 
