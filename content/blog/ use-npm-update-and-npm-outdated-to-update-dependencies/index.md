@@ -63,6 +63,8 @@ $ npm install lodash@latest
 }
 ```
 
+相关推荐：npm 语义化版本控制 https://segmentfault.com/a/1190000018714929
+
 <div class="callout">
 
 原文：[Using npm update and npm outdated to update dependencies](https://bytearcher.com/articles/using-npm-update-and-npm-outdated-to-update-dependencies/) By [PANU PITKÄMÄKI](https://bytearcher.com/contact/)
